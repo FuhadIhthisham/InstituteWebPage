@@ -20,6 +20,10 @@ h1 {
   height: 100%;
 }
 
+.hidden {
+  display: none;
+}
+
 .right-section > div > h2,
 .right-section-2 > div > h2 {
   font-weight: 900 !important;
@@ -91,11 +95,15 @@ h3 {
 
 .unit-4:hover {
   background-color: #00d2b5;
-  transform: translatey(-10px); 
+  transform: translatey(-10px);
 }
 
 .unit-4:hover .unit-4-icon {
   background-color: #fff;
+}
+.unit-4:hover .head-1,
+.unit-4:hover .para-1{
+  color: #fff;
 }
 
 .unit-4:hover .unit-4-icon i {
