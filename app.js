@@ -9,7 +9,19 @@ const video4 = document.querySelector(".video-4");
 const img5 = document.querySelector(".img-5");
 const video5 = document.querySelector(".video-5");
 
+// Scroll to top button
+const btn = document.getElementById("up-btn1");
 
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY <= 100) {
+    btn.classList.add("hidden");
+  } else {
+    btn.classList.remove("hidden");
+  }
+});
+
+// image to video toggle
 const videoToggle = () => {
   img1.classList.add("hidden");
   video1.classList.remove("hidden");
